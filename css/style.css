@@ -30,7 +30,7 @@ a {
 ..............................................*/
 
 .header {
-    background: #f3da0b url("../img/coding.png") no-repeat center;
+    background: url("../img/coding.png") no-repeat center;
     background-size: cover;
 
     height: 100vh;
@@ -48,8 +48,7 @@ a {
 }
 
 .header__title {
-    font-size: 56px;
-    line-height: 62px;
+    font-size: 5em;
     margin-bottom: 10px;
     margin-top: -50px;
     font-family: "Do Hyeon", sans-serif;
