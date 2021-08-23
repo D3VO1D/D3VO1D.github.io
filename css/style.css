@@ -16,13 +16,19 @@ a {
     transition: 0.2s ease-out;
 }
 
+.divider {
+    margin: 0 5%;
+    background: #ccc;
+}
+
 /* .........................................
     GRID
 ..............................................*/
 .container-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 32px;
 }
 
 /* .........................................
@@ -79,6 +85,36 @@ a {
 
 
 /* .........................................
+    TEAM
+..............................................*/
+
+.section__person {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.person__image {
+    width: 50%;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin-bottom: 24px;
+}
+
+.person__image:hover {
+    box-shadow: 8px 8px 4px rgba(204, 204, 204, 0.5);
+    transition: 0.3s;
+}
+
+.person__info {
+    font-size: 18px;
+}
+
+
+/* .........................................
     PORTFOLIO
 ..............................................*/
 
@@ -98,7 +134,7 @@ a {
     text-align: center;
 }
 
-.project__image img {
+.project__image {
     width: 360px;
     height: 250px;
     object-fit: contain;
@@ -112,13 +148,13 @@ a {
     margin-bottom: 12px;
 }
 
-.project__title a {
+.section__title-link {
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
 }
 
-.project__title a:hover {
+.section__title-link:hover {
     color: #0052C2;
     border-color: rgba(0, 82, 194, 0.3);
 }
@@ -169,7 +205,6 @@ p.footer__icons a {
     color: white;
     text-decoration: none;
     margin-right: 30px;
-
 }
 
 p.footer__icons a:last-child {
@@ -191,7 +226,7 @@ p.footer__icons a:hover {
         grid-template-columns: 1fr;
     }
 
-    .project__image img {
+    .project__image {
         height: auto;
     }
 
